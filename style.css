@@ -162,6 +162,14 @@ opacity: 0.6;
     width: 500px;
     height: 100%;
   }
+  .introduction{
+    text-align:justify;
+    padding-top: 50px;
+  
+  }
+  .social-media{
+    padding-top: 50px;
+  }
 }
 .vertical-center {
   margin: 0;

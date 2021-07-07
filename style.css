@@ -150,17 +150,10 @@ opacity: 0.6;
 }
 
 .svg{
-  padding: 25px;
-  margin: 25px;
   width: auto;
   height: 80%;
 }
-@media only screen and (max-width: 600px) {
-  .svg {
-    width: 500px;
-    height: 100%;
-  }
-}
+
 .vertical-center {
   margin: 0;
   position:relative;
@@ -225,7 +218,3 @@ footer{
   color: gray;
 }
 
-.btn-outline-primary:hover{
-  background-color: black;
-  color: gray;
-}

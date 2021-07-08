@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -42,7 +43,7 @@
                 <a class="nav-link" href="#Certification">Certifications</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -59,6 +60,7 @@
                 <li class="icon"><a target="blank" href="mailto:saikumarkv99@gmail.com" class="fa fa-google" ></a></li>
                 <li class="icon"><a target="blank" href="https://www.instagram.com/sai_kumar808/" class="fa fa-instagram"></a></li>
               </ul>
+
             </div>
             <div class="col-11 col-md-6 introduction">
               <h1 class="line-1 anim-typewriter">Hola &#128515;, This is Sai Kumar..</h1>
@@ -142,7 +144,7 @@
         <div class="container">
           <div class="row cc">
             <div class="container">
-              <h4 class="display-4" style="text-align: start;"><img src="mits.png" height="60px" width="60px" class="college-logo">Under graduation</h4>
+              <h4 class="display-4" style="text-align: start;"><img src="mits.png" height="60px" width="60px" class="college-logo">B.Tech</h4>
               <p class="lead" style="text-align: start;">I have completed my under graduation in the stream of electronics and communicataion with 8.64 CGPA.</p>
             </div>
           </div>
@@ -177,7 +179,7 @@
               <img class="card-img-top" src="deeplearning.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Deep learning certification</h5>
-                <p class="card-text">This certification provided me with all the mathermatical foundation and basics required for the neural networks.</p>
+                <p class="card-text">This certification provided me with all the mathermatical foundation and basics required for building the neural networks.</p>
 
               </div>
             </div>
@@ -198,7 +200,7 @@
               <img class="card-img-top" src="deeplearning.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">NLP certification</h5>
-                <p class="card-text">TThis course helped me to know about some of the advanced topics like transformers, weod2vec and many concepts.</p>
+                <p class="card-text">This course helped me to know about some of the advanced topics like transformers, weod2vec and many concepts.</p>
 
               </div>
             </div>
@@ -258,7 +260,7 @@
         
         <h3 class="header">Blogs</h3>
 
-        <div class="container blog">
+        <div class="container blog-cards">
           <div class="row">
             <div class="col-sm-6">
               <div class="car">
@@ -278,15 +280,34 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6">
+              <div class="car">
+                <div class="card-body">
+                  <h5 class="card-title">Gitlab copilot</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Checkout</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="car">
+                <div class="card-body">
+                  <h5 class="card-title">Gitlab copilot</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Checkout</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       
       </section>
 
+
       <section>
-        <h3 class="header">Contact</h3>
+        <h3 class="header" id = "contact">Contact</h3>
         <div class="container">
-          <form action="action_page.php">
+          <form action="#">
         
             <label for="fname">Name</label>
             <input style="color: grey;" type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -295,7 +316,7 @@
             <label for="subject">Message</label>
             <textarea style = "color: grey;" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         
-            <a href="#" class="btn btn-primary">Send</a>
+            <a href="#" class="btn btn-primary" onclick="sendEmail()">Send</a>
         
           </form>
         </div>
@@ -303,7 +324,22 @@
           <p> @copyright saikumar 2021</p>
         </footer>
       </section>
-
+      <script type="text/javascript">
+        function sendEmail() {
+              Email.send({
+                Host: "smtp.gmail.com",
+                Username: "saikumarkv99@gmail.com",
+                Password: "9848650197",
+                To: 'saikumarkv99@gmail.com',
+                From: "sender@email_address.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+              })
+              .then(function (message) {
+                alert("mail sent successfully")
+              });
+        }
+      </script>
    </body>
 
 

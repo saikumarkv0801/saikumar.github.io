@@ -26,9 +26,8 @@ async function fun(){
       document.getElementById("js_header").innerHTML = showing_data;
       
     }
-    if (data == showing_data){
-      showing_data = ""
-    }
+    
+    showing_data = ""
     if (j == data_array.length){
       j = 0;
     }

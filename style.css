@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', 'Arial', sans-serif;
-    background-color: black;
+    font-family: 'Lato', 'Arial', sans-serif;    
   }
   
 .navbar .navbar-brand{
@@ -22,7 +21,10 @@
 opacity: 0.6;
 }
 
-
+.description{
+  padding: 10px;
+  text-align: center;
+}
 
 .introduction{
   text-align:justify;
@@ -45,9 +47,7 @@ opacity: 0.6;
   opacity: 0.7;
 }
 
-.description{
-  color: gray;
-}
+
 
 .line-1{
     color: blue;
@@ -59,33 +59,19 @@ opacity: 0.6;
     text-align: justify;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    display: inline;
 }
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
 
 .header{
   text-align: center;
-  color: gray;
+  color: rgb(35, 35, 153);
   font-weight: 1000;
   font-size: xx-large;
   padding-top: 20px;
 }
 
 .about-info{
-  color: gray;
   font-size: x-large;
   position: relative;
   text-align: center;
@@ -110,8 +96,8 @@ opacity: 0.6;
   width: 22.5em;
 }
 .skill__type {
-  color: #fff;
-  font-weight: 300;
+  color: blue;
+  font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.145em;
   text-transform: uppercase;
@@ -121,11 +107,11 @@ opacity: 0.6;
   height: 0.75em;
 }
 .skill__outer-bar {
-  background: #333;
+  background: darkgray;
 }
 .skill__inner-bar {
   animation: fillBar 1s forwards;
-  background: #fff;
+  background: darkgray;
   left: 5em;
   transform: scaleX(0);
   transform-origin: 0 0;
@@ -157,7 +143,7 @@ opacity: 0.6;
 }
 @media only screen and (max-width: 600px) {
   .svg {
-    width: 470px;
+    width: 100%;
     height: 100%;
   }
   .introduction{
@@ -178,9 +164,7 @@ opacity: 0.6;
   transform: translateY(-50%);
 }
 
-.cc{
-  color: gray;
-}
+
 
 .college-logo{
   border-radius: 50%;
@@ -189,7 +173,7 @@ opacity: 0.6;
 
 footer{
   text-align: center;
-  color: gray;
+  
 }
 
 .cert-row{
@@ -205,7 +189,6 @@ footer{
   border-radius: 5px;
   border-color: blue;
   opacity: 0.6;
-  color: darkgray;
   margin: 20 px;
 }
 
@@ -224,7 +207,7 @@ footer{
   border-color: blue;
   padding: 25px;
   margin: 25px;
-  color: gray;
+  color: blue;
 }
 
 .car{
@@ -234,12 +217,12 @@ footer{
   border-color: blue;
 
   margin: 25px;
-  color: gray;
+
 }
 
 .btn-outline-primary:hover{
   background-color: black;
-  color: gray;
+
 }
 .btn-outline-primary{
   border: 2px;
@@ -306,4 +289,8 @@ input[type=submit]:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: blue; 
+}
+
+#js_header{
+  display: inline;
 }
